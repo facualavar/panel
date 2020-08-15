@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  public stateSidebar: boolean = true;
   title = 'panel';
+
+  openSidebar(){
+    this.stateSidebar = !this.stateSidebar;    
+  }
+
+  ngOnInit() {
+  }
 }

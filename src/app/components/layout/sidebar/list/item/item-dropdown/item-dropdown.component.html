@@ -1,0 +1,9 @@
+<li class="nav-item dropdown px-3" [class.active]="abierto">
+    <a class="nav-link text-nowrap" (click)="cambiarEstado();" href="#li_{{itemDrop.texto}}" data-toggle="collapse" role="button" aria-expanded="false" >
+        <i class="{{itemDrop.icon}}"></i>&nbsp;{{itemDrop.texto}}
+        <i [ngClass]="{'fa':true ,'fa-angle-left':!abierto,'fa-angle-down':abierto,'float-right':true}"></i>
+    </a>
+    <ul class="nav navbar-nav flex-column collapse" id="li_{{itemDrop.texto}}">
+        <app-item-link *ngFor="let subItem of itemDrop.ruta" [itemLink]="subItem"></app-item-link>
+    </ul>
+</li>

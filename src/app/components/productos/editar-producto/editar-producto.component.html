@@ -1,0 +1,211 @@
+<form id="formProducto" class="form">
+    <div class="form-row">
+        <div class="form-group col-12">
+            <div class="card border-info">
+                <h5 class="card-header bg-info text-white">General</h5>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputCodigo">Codigo</label>
+                            <input type="text" class="form-control" id="inputCodigo" placeholder="Codigo">
+                        </div>
+                        <div class="form-group col-md-9">
+                            <label for="inputNombre">Nombre</label>
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="inputDescripcion">Descripcion</label>
+                            <input type="text" class="form-control" id="inputDescripcion" placeholder="Descripcion">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="inputTexto">Texto</label>
+                            <textarea class="form-control" id="inputTexto" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>                              
+            </div>
+        </div>        
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <div class="card border-primary">
+                <h5 class="card-header bg-primary text-white">Precios</h5>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputPrecioVenta">Venta</label>
+                            <input type="text" class="form-control" id="inputPrecioVenta" placeholder="Venta">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputDescuento">Descuento</label>
+                            <input type="text" class="form-control" id="inputDescuento" placeholder="%">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputPrecioLista">Lista</label>
+                            <input type="text" class="form-control" id="inputPrecioLista" placeholder="0" disabled>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="">Estado</label>                          
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkNuevo" value="0" checked>
+                                <label class="form-check-label" for="checkNuevo">Nuevo</label>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>         
+        </div>
+        <div class="form-group col-md-9">
+            <div class="card border-secondary">
+                <h5 class="card-header bg-secondary text-white">Detalles</h5>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCategoria">Categoria</label>
+                            <select id="inputCategoria" class="form-control">
+                                <option selected>Elejir...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputSubCategoria">Sub Categoria</label>
+                            <select id="inputSubCategoria" class="form-control">
+                                <option selected>Elejir...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputGenero">Genero</label>
+                            <select id="inputGenero" class="form-control">
+                                <option selected>Elejir...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputMarca">Marca</label>
+                            <select id="inputMarca" class="form-control">
+                                <option selected>Elejir...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputPais">Pais de origen</label>
+                            <select id="inputPais" class="form-control">
+                                <option selected>Elejir...</option>
+                                <option>...</option>
+                            </select>
+                        </div>                        
+                    </div>
+                </div>
+            </div>            
+        </div>       
+    </div>
+    <div class="form-row">
+        <div class="form-group col-12">
+            <div class="card border-danger">
+                <h5 class="card-header bg-danger text-white">Multimedia</h5>
+                <div class="card-body">
+                    <div class="form-row">
+                        
+                        <div class="form-group col-md-6">
+                            <label for="inputDescripcion">Imagenes</label>
+                            <div class="form-row">
+                                <div class="btn-group">
+                                    <button class="btn btn-danger"><i class="fas fa-paperclip"></i> Importar</button>
+                                </div>
+                            </div>                
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputVideo">Video de YouTube</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">https://www.youtube.com/watch?v=</div>
+                                </div>
+                                <input type="text" class="form-control" id="inputVideo" placeholder="aANQEIDbBrw&list=RDaANQEIDbBrw&start_radio=1">
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <div class="card border-dark">
+                <h5 class="card-header bg-dark text-white">Dimensiones</h5>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputAlto">Alto</label>
+                            <input type="text" class="form-control" id="inputAlto" placeholder="Alto">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputAncho">Ancho</label>
+                            <input type="text" class="form-control" id="inputAncho" placeholder="Ancho">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputLargo">Largo</label>
+                            <input type="text" class="form-control" id="inputLargo" placeholder="Largo">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputPeso">Peso</label>
+                            <input type="text" class="form-control" id="inputPeso" placeholder="Peso">
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <div class="card border-success">
+                <h5 class="card-header bg-success text-white">Mas opciones</h5>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="inputEtiquetas">Etiquetas</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-success" type="button"><i class="far fa-hand-pointer"></i> Seleccionar</button>
+                            </div>
+                            <input type="text" class="form-control" id="inputEtiquetas" placeholder="Categoria Mercado libre" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputNombreMeli">Productos Relacionados</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-success" type="button"><i class="far fa-hand-pointer"></i> Seleccionar</button>
+                            </div>
+                            <input type="text" class="form-control" id="inputEtiquetas" placeholder="Prodcutos Relacionados" disabled>
+                        </div>
+                    </div>                  
+                </div>
+            </div>         
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <div class="card border-warning">
+                <h5 class="card-header bg-warning text-white">Mercado Libre</h5>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="inputCategoriaMeli">Categoria Mercado libre</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-warning text-white" type="button"><i class="far fa-hand-pointer"></i> Seleccionar</button>
+                            </div>
+                            <input type="text" class="form-control" id="inputCategoriaMeli" placeholder="Categoria Mercado libre" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputNombreMeli">Nombre Mercado Libre</label>
+                        <input type="text" class="form-control" id="inputNombreMeli" placeholder="Nombre en Mecado libre">
+                    </div>                  
+                </div>
+            </div>         
+        </div>
+    </div>
+    
+    <div class="btn-group btn-group-lg mb-5" role="button">
+        <button class="btn btn-danger" type="button">Cancelar</button>
+        <button class="btn btn-primary" type="button">Guardar</button>
+    </div>    
+</form>

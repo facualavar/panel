@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+.bg-custom{
+    background-color: #518CA3;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.btn-custom{
+    color: #fff;
+    background-color: #518CA3;
+}
+
+.btn-custom:hover{
+    color: #fff;
+    background-color: #579ab4;
+}
+
+
+/********************
+    Check Custom
+*********************/
+
+.check-custom{
+	position: relative;
+	margin-bottom: 30px;
+	padding:5px 0 5px 60px;
+	display: block;
+}
+
+.check-custom input[type=checkbox]{
+    visibility: hidden;
+}
+
+.check-custom input + button{
+    background: #f0f0f0;
+    border:2px solid rgba(0,0,0,0.2);
+    position: absolute; 
+    left: 0;
+    top: 0;
+}
+
+.check-custom input[type=checkbox ] + button{
+ width: 52px;
+ height: 30px;
+ border-radius: 15px;
+}
+
+.check-custom input[type=checkbox] + button:before{
+	content: ''; /* No hay contenido */
+	width: 26px;
+	height: 26px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+}
+
+.check-custom input[type=checkbox]:checked + button:before{
+	left: 22px;
+	-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+}
+ 
+.check-custom input[type=checkbox]:checked + button{
+ background: rgb(8, 150, 79);
+}
+
+.check-custom input[type=checkbox] + button:after{
+	content: 'ON';
+	position: absolute;
+	font-size: 10px;
+	color: rgba(255,255,255,0.6);
+	top: 8px;
+	left: 4px;
+	opacity: 0 /* Ocultamos este elemento */;
+	transition: all 0.25s ease 0.25s;
+}
+
+.check-custom input[type=checkbox]:checked + button:after{
+    opacity: 1;
+}

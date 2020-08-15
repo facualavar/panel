@@ -1,0 +1,16 @@
+.open{
+    transform: translateX(-100%);
+}
+
+.col-0{
+    max-width: 0px;
+    flex: 0 0 0%    
+}
+
+#sidebar{
+    transition: all 0.5s;
+}
+
+#seccion-principal{
+    transition: all 0.5s;
+}

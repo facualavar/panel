@@ -1,0 +1,15 @@
+.nav-item:hover{
+    border-left: solid 5px #fff;
+}
+
+.nav-item.active{
+    border-left: solid 5px #fff;
+}
+
+.nav-item{
+    transition: all 0.3s;
+}
+
+.nav-item.active .nav-link{
+    color: #fff;
+}

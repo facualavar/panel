@@ -1,0 +1,3 @@
+{
+    "usuarios": "[{\"id\":1,\"nombres\":\"Facundo\",\"apellido\":\"Alavar\",\"usuario\":\"facundo.alavar\",\"password\":\"123456\",\"email\":\"facualavar@gmail.com\",\"perfil\":{\"id\":1,\"nombre\":\"Administrador\"}},{\"id\":2,\"nombres\":\"UsuarioFront\",\"apellido\":\"web\",\"usuario\":\"frontUser\",\"password\":\"frontUser\",\"email\":\"frontUser@info\",\"perfil\":{\"id\":4,\"nombre\":\"Cliente\"}},{\"id\":3,\"nombres\":\"Juan Gines\",\"apellido\":\"Herrera\",\"usuario\":\"juan.herrera\",\"password\":\"123456\",\"email\":\"juanherrera@mail.com\",\"perfil\":{\"id\":3,\"nombre\":\"Editor de Contenidos\"}}]"
+  }

@@ -1,0 +1,10 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item my-auto"><a class="text-decoration-none text-dark" href="#">Home</a></li>
+        <li class="breadcrumb-item my-auto active"><a class="text-decoration-none text-capitalize text-muted" href="javascript:void(0)">{{router.url.substr(1)}}</a></li>
+        <li class="breadcrumb-item my-auto active d-none">Extra</li>
+        <li *ngIf="router.url.slice(1)!='user' && router.url.slice(1)!='empresa' && router.url.slice(1)!='dash'" class="nav-item mr-0 ml-auto">
+            <a class="btn btn-sm btn-info" href="#" [routerLink]="router.url+'/new'" routerLinkAcive="active"><i class="fa fa-plus"></i> Crear Nuevo</a>  
+        </li>
+    </ol>
+</nav>
